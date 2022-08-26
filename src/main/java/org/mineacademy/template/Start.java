@@ -5,11 +5,13 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.player.PlayerInteractEntityEvent;
 import org.mineacademy.fo.plugin.SimplePlugin;
 
+import java.awt.*;
+
 public final class Start extends SimplePlugin {
 
 	@Override
 	protected void onPluginStart() {
-		System.out.println("Plugin enabled.");
+		System.out.print(Color.ORANGE + "Plugin has been enabled.");
 	}
 
 	@EventHandler
@@ -26,6 +28,6 @@ public final class Start extends SimplePlugin {
 
 	@Override
 	protected void onPluginDisable() {
-		System.out.println("Plugin disabled.");
+		System.out.print(Color.RED + "Plugin has been disabled.");
 	}
 }
