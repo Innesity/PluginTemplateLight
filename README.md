@@ -1,0 +1,2 @@
+# PluginTemplateLight
+McAcademy tutorial
