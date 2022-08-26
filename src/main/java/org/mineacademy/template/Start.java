@@ -11,7 +11,7 @@ public final class Start extends SimplePlugin {
 
 	@Override
 	protected void onPluginStart() {
-		System.out.print(Color.ORANGE + "Plugin has been enabled.");
+		System.out.print(Color.GREEN + "Plugin has been enabled.");
 	}
 
 	@EventHandler
