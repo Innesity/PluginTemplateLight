@@ -16,6 +16,7 @@ public final class Start extends SimplePlugin {
 
 	@Override
 	protected void onPluginStart() {
+		System.out.println("Plugin enabled.");
 	}
 
 	@EventHandler
@@ -28,5 +29,10 @@ public final class Start extends SimplePlugin {
 				event.getRightClicked().getWorld().createExplosion(event.getRightClicked().getLocation(), 6);
 			}
 		}
+	}
+
+	@Override
+	protected void onPluginDisable() {
+		System.out.println("Plugin disabled.");
 	}
 }
