@@ -20,9 +20,7 @@ public final class Start extends SimplePlugin {
 			event.getRightClicked().getWorld().createExplosion(event.getRightClicked().getLocation(), 2);
 		}
 		else{
-			if(event.getRightClicked().getType() != EntityType.PIG) {
 				event.getRightClicked().getWorld().createExplosion(event.getRightClicked().getLocation(), 6);
-			}
 		}
 	}
 
