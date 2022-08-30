@@ -1,4 +1,4 @@
-# PluginTemplateLight
-McAcademy tutorial
+# Plugin Template Light -_uwu_-
+minecraftacademy.org course
 
-Acest proiect este un test.
+On this repository I'm gonna push commits I made.
