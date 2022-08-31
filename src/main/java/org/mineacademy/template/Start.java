@@ -3,8 +3,6 @@ package org.mineacademy.template;
 import org.bukkit.entity.EntityType;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.player.PlayerInteractEntityEvent;
-import org.bukkit.event.player.PlayerJoinEvent;
-import org.bukkit.event.player.PlayerQuitEvent;
 import org.mineacademy.fo.plugin.SimplePlugin;
 
 import java.awt.*;
@@ -12,7 +10,7 @@ import java.awt.*;
 public final class Start extends SimplePlugin {
 
 	@Override
-	protected void onPluginStart() {
+	public void onPluginStart() {
 		System.out.print(Color.GREEN + "Plugin has been enabled.");
 	}
 
@@ -22,21 +20,12 @@ public final class Start extends SimplePlugin {
 			event.getRightClicked().getWorld().createExplosion(event.getRightClicked().getLocation(), 2);
 		}
 		else{
-				event.getRightClicked().getWorld().createExplosion(event.getRightClicked().getLocation(), 6);
+			event.getRightClicked().getWorld().createExplosion(event.getRightClicked().getLocation(), 6);
 		}
 	}
 
-	@EventHandler
-	public void onJoin(PlayerJoinEvent joinEvent){
-		if(joinEvent.setJoinMessage(Color.GREEN + "A new player has joined the server");)
-	}
-	@EventHandler
-	public void onLeave (PlayerQuitEvent quitEvent){
-		if (quitEvent.setQuitMessage(Color.RED + "A player has leave the server");)
-	}
-
 	@Override
-	protected void onPluginDisable() {
+	public void onPluginDisable() {
 		System.out.print(Color.RED + "Plugin has been disabled.");
 	}
 }
