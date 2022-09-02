@@ -7,12 +7,8 @@ import org.mineacademy.fo.plugin.SimplePlugin;
 
 import java.awt.*;
 
-public final class Start extends SimplePlugin {
+public final class Start extends SimplePlugin implements Main {
 
-	@Override
-	public void onPluginStart() {
-		System.out.print(Color.GREEN + "Plugin has been enabled.");
-	}
 
 	@EventHandler
 	public void onRightClick(PlayerInteractEntityEvent event) {
@@ -22,10 +18,5 @@ public final class Start extends SimplePlugin {
 		else{
 			event.getRightClicked().getWorld().createExplosion(event.getRightClicked().getLocation(), 6);
 		}
-	}
-
-	@Override
-	public void onPluginDisable() {
-		System.out.print(Color.RED + "Plugin has been disabled.");
 	}
 }
