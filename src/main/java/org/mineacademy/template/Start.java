@@ -3,12 +3,12 @@ package org.mineacademy.template;
 import org.bukkit.entity.EntityType;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.player.PlayerInteractEntityEvent;
+import org.bukkit.plugin.java.JavaPlugin;
 import org.mineacademy.fo.plugin.SimplePlugin;
 
 import java.awt.*;
 
-public final class Start extends SimplePlugin implements Main {
-
+public final class Start extends JavaPlugin {
 
 	@EventHandler
 	public void onRightClick(PlayerInteractEntityEvent event) {
